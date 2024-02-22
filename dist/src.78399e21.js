@@ -28926,6 +28926,20 @@ var wishes = [{
 //             </ul>
 //         </div>
 //     );
+// // }
+
+// const App = () => {
+//     return (
+//         <div className="whis-input">
+//             <h1>My Whislist from REACT</h1>
+//             <fieldset className="wish-input">
+//                 <legend className="wish-input_label">Add a new wish</legend>
+
+//                 <input type="text" id="wish" name="wish" />
+//                 <button>Add</button>
+//             </fieldset>
+//         </div>
+//     );
 // }
 
 var App = function App() {
@@ -28936,10 +28950,18 @@ var App = function App() {
   }, /*#__PURE__*/_react.default.createElement("legend", {
     className: "wish-input_label"
   }, "Add a new wish"), /*#__PURE__*/_react.default.createElement("input", {
-    type: "text",
-    id: "wish",
-    name: "wish"
-  }), /*#__PURE__*/_react.default.createElement("button", null, "Add")));
+    className: "wish-input_field",
+    placeholder: "Enter your wish here"
+  })), /*#__PURE__*/_react.default.createElement("ul", {
+    className: "wish-list"
+  }, wishes.map(function (_ref, i) {
+    var text = _ref.text,
+      done = _ref.done;
+    return /*#__PURE__*/_react.default.createElement("li", {
+      key: text,
+      className: "wish-list__item ".concat(done, " ? 'wish-list__item--done': ''")
+    }, text);
+  })));
 };
 var _default = exports.default = App;
 },{"react":"../node_modules/react/index.js","./App.css":"App/App.css"}],"App/index.js":[function(require,module,exports) {

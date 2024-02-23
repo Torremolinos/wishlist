@@ -38,7 +38,7 @@ const wishes = [
 
     const App = () => {
         return (
-            <div className="whis-input">
+            <div className="app">
                 <h1>My Whislist from REACT</h1>
                 <fieldset className="wish-input">
                     <legend className="wish-input_label">Add a new wish</legend>

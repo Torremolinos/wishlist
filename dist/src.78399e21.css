@@ -1,2 +1,18 @@
+*{
+    box-sizing: border-box;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+.app{
+    width: 400px;
+    margin: auto;
+    max-width: 100%;
+}
+
+
 
 /*# sourceMappingURL=/src.78399e21.css.map */

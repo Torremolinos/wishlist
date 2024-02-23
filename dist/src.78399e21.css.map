@@ -1,1 +1,1 @@
-{"version":3,"sources":["App/App.css"],"names":[],"mappings":"AAAA","file":"src.78399e21.css","sourceRoot":"..\\src","sourcesContent":[""]}
+{"version":3,"sources":["App/App.css"],"names":[],"mappings":"AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","file":"src.78399e21.css","sourceRoot":"..\\src","sourcesContent":["*{\r\n    box-sizing: border-box;\r\n}\r\n\r\nbody, html {\r\n    margin: 0;\r\n    padding: 0;\r\n}\r\n\r\n.app{\r\n    width: 400px;\r\n    margin: auto;\r\n    max-width: 100%;\r\n}\r\n\r\n"]}

@@ -28944,7 +28944,7 @@ var wishes = [{
 
 var App = function App() {
   return /*#__PURE__*/_react.default.createElement("div", {
-    className: "whis-input"
+    className: "app"
   }, /*#__PURE__*/_react.default.createElement("h1", null, "My Whislist from REACT"), /*#__PURE__*/_react.default.createElement("fieldset", {
     className: "wish-input"
   }, /*#__PURE__*/_react.default.createElement("legend", {

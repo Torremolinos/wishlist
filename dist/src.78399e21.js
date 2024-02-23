@@ -28948,9 +28948,9 @@ var App = function App() {
   }, /*#__PURE__*/_react.default.createElement("h1", null, "My Whislist from REACT"), /*#__PURE__*/_react.default.createElement("fieldset", {
     className: "wish-input"
   }, /*#__PURE__*/_react.default.createElement("legend", {
-    className: "wish-input_label"
+    className: "wish-input__label"
   }, "Add a new wish"), /*#__PURE__*/_react.default.createElement("input", {
-    className: "wish-input_field",
+    className: "wish-input__field",
     placeholder: "Enter your wish here"
   })), /*#__PURE__*/_react.default.createElement("ul", {
     className: "wish-list"
@@ -28959,7 +28959,7 @@ var App = function App() {
       done = _ref.done;
     return /*#__PURE__*/_react.default.createElement("li", {
       key: text,
-      className: "wish-list__item ".concat(done, " ? 'wish-list__item--done': ''")
+      className: "wish-list__item ".concat(done ? 'wish-list__item--done' : '')
     }, /*#__PURE__*/_react.default.createElement("input", {
       id: "wish".concat(i),
       type: "checkbox",
@@ -28967,7 +28967,9 @@ var App = function App() {
     }), /*#__PURE__*/_react.default.createElement("label", {
       htmlFor: "wish".concat(i)
     }, text));
-  })));
+  })), /*#__PURE__*/_react.default.createElement("button", {
+    className: "wish-clear"
+  }, "Archive Done"));
 };
 var _default = exports.default = App;
 },{"react":"../node_modules/react/index.js","./App.css":"App/App.css"}],"App/index.js":[function(require,module,exports) {
@@ -29024,7 +29026,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53850" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60814" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

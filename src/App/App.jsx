@@ -41,17 +41,18 @@ const wishes = [
             <div className="app">
                 <h1>My Whislist from REACT</h1>
                 <fieldset className="wish-input">
-                    <legend className="wish-input_label">Add a new wish</legend>
-                    <input className="wish-input_field" placeholder="Enter your wish here" />
+                    <legend className="wish-input__label">Add a new wish</legend>
+                    <input className="wish-input__field" placeholder="Enter your wish here" />
                 </fieldset>
                   <ul className="wish-list">
                     {wishes.map(({text, done}, i) => (
-                        <li key={text} className={`wish-list__item ${done} ? 'wish-list__item--done': ''`}>
+                        <li key={text} className={`wish-list__item ${done ? 'wish-list__item--done': ''}`}>
                         <input id={`wish${i}`} type="checkbox" checked ={done}/>
                         <label htmlFor={`wish${i}`}>{text}</label>
                         </li> 
                     ))}
                   </ul>
+                  <button className="wish-clear">Archive Done</button>
             </div>
         );
     }

@@ -1,5 +1,6 @@
 import React from "react";
 import "./App.css";
+import WishInput from "./WishInput";
 
 const wishes = [
     { text: 'Travel to the moon', done : false },
@@ -40,10 +41,7 @@ const wishes = [
         return (
             <div className="app">
                 <h1>My Whislist from REACT</h1>
-                <fieldset className="wish-input">
-                    <legend className="wish-input__label">Add a new wish</legend>
-                    <input className="wish-input__field" placeholder="Enter your wish here" />
-                </fieldset>
+                <WishInput onNewWish={text => console.log(text)} />
                   <ul className="wish-list">
                     {wishes.map(({text, done}, i) => (
                         <li key={text} className={`wish-list__item ${done ? 'wish-list__item--done': ''}`}>

@@ -1,2 +1,2 @@
-import WishList from './WishInput';
+import WishList from './Wishlist';
 export default WishList;

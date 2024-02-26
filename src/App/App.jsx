@@ -1,8 +1,8 @@
 import React from "react";
 import "./App.css";
-// import WishInput from "./WishInput";
-// import WishList from "./WishList";
-
+import WishInput from "./WishInput";
+import WishList from "./WishList";
+import setWishes from "./WishList";
 const wishes = [
     { text: 'Travel to the moon', done : false },
     { text: 'Pay the gym', done : true },
@@ -42,10 +42,11 @@ const wishes = [
         return (
             <div className="app">
                 <h1>My Whislist from REACT</h1>
-                {/* <WishInput onNewWish={ wish} />
-                <WishList wishes={wishes} /> */}
+                <WishInput onNewWish={ wish => setWishes([wish,...wishes])} />
+                <WishList wishes={wishes} onWishesChange={setWishes}/>
+                <WishList wishes={wishes} />
                 
-                  <button className="wish-clear">Archive Done</button>
+                  <button className="wish-clear" type='button'>Archive Done</button>
             </div>
         );
     }
